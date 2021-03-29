@@ -92,13 +92,9 @@ public class Snap extends CardGame{
                     Card c2=selectDeck.get(index-1);
                     if(c1.getSuit().equals(c2.getSuit())){
                         if(!flag) {
-                            System.out.println("*******************************");
                             System.out.println(playerOne+": SNAP SNAP SNAP SNAP");
-                            System.out.println("*******************************");
                         }else{
-                            System.out.println("*******************************");
                             System.out.println(playerTwo+": SNAP SNAP SNAP SNAP");
-                            System.out.println("*******************************");
                         }
                         winFlag=true;
                         break;
@@ -116,8 +112,10 @@ public class Snap extends CardGame{
                 }else{
                     System.out.println(playerTwo+":Click Enter for next Card");
                 }
-                displayHands(selectDeck);
                 flag=turn(flag);
+                displayHands(selectDeck);
+
+
             }
 
         }
